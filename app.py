@@ -11,7 +11,7 @@ def cargar_modelo_y_datos():
         data = pickle.load(file)
         modelo = data["model"]
         diccionario_inverso = data["label_encoder_mapping"]
-        dataframe_entrenamiento = data["dataframe"]  # Asegúrate que este key existe en tu .pkl
+        dataframe_entrenamiento = data["dataframe_codificado"]  # Asegúrate que este key existe en tu .pkl
         return modelo, diccionario_inverso, dataframe_entrenamiento
 
 modelo, diccionario_inverso, df = cargar_modelo_y_datos()
