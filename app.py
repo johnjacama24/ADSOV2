@@ -11,7 +11,7 @@ st.set_page_config(page_title="Predicción Estado del Aprendiz", page_icon="📊
 def cargar_modelo_y_diccionario(path="best_model.pkl"):
     with open(path, "rb") as f:
         data = pickle.load(f)
-    modelo = data.get("modelo")
+    modelo = data.get("model")
     
     posibles_claves = [
         "label_encoder_mapping", "diccionario_inverso", 
