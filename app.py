@@ -9,7 +9,7 @@ import pickle
 def cargar_modelo_y_diccionario(path="best_model.pkl"):
     with open(path, "rb") as file:
         data = pickle.load(file)
-        return data["modelo"], data["label_encoder_mapping"]
+        return data["model"], data["label_encoder_mapping"]
 
 # ----------------------------
 # Cargar DataFrame base
